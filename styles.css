@@ -36,6 +36,7 @@
         padding: 20px;
         border-radius: 10px;
         color: white;
+        transition: transform 0.3s, background 0.3s;
     }
     body::before {
         content: '';
@@ -67,6 +68,7 @@
         padding: 20px;
         border-radius: 10px;
         color: white;
+        transition: transform 0.3s, background 0.3s;
     }
     body::before {
         content: '';
@@ -133,6 +135,7 @@ hr{
     border-top: 4px solid #172c54;
     width: 50%;
     margin: 5% 25%;
+    transition: width 0.3s;
 }
 
 hr.linea-completa{
@@ -172,6 +175,7 @@ p{
     align-items: center;
     margin: 0;
     z-index: 10;
+    transition: background-color 0.3s;
 }
 
 #contenedor-logo{
@@ -189,6 +193,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s;
 }
 
 #logo{
@@ -213,6 +218,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s;
 }
 
 .icono-barra-nav{
@@ -224,7 +230,7 @@ p{
     margin: 0 10%;
 }
 
-.contenedor-yate{
+.contenedor-yate {
     height: 40vh;
     color: white;
     display: flex;
@@ -232,12 +238,26 @@ p{
     align-items: center;
     justify-content: end;
     padding: 2%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
 }
 
-.descripcion-yate{
+
+.contenedor-yate:hover {
+    transform: scale(1.05);
+}
+
+.descripcion-yate, .descubre-mas {
     font-family: SansationLight;
     margin: 0;
     z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contenedor-yate:hover .descripcion-yate, .contenedor-yate:hover .descubre-mas {
+    opacity: 1;
 }
 
 .descubre-mas{
@@ -256,6 +276,11 @@ p{
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     z-index: 1;
+    transition: background 0.3s;
+}
+
+.contenedor-yate:hover::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
 }
 
 .m48{
