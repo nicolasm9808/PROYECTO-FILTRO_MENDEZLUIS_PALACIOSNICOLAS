@@ -59,3 +59,16 @@ No se requiere instalación adicional más allá de un navegador web estándar.
 3. Realiza cambios y haz commit (`git commit -am 'Añade mejoras'`).
 4. Push a la rama (`git push origin feature/Mejora`).
 5. Abre un Pull Request.
+
+## Estructura del proyecto
+luxury-yacht/
+├── Capturas/
+├── Diseño/
+├── Fuentes/
+├── Recursos/
+├── index.html
+├── M48.html
+├── F4.html
+├── carrito.html
+├── styles.css
+├── README.md

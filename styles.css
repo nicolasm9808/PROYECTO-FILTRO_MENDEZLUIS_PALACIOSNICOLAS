@@ -286,6 +286,13 @@ p{
     background-position: center;
 }
 
+.y420s{
+    position: relative;
+    background-image: url(Recursos/420S.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 .contenedor-redes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
