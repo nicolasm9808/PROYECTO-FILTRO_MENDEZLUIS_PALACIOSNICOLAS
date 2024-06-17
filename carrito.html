@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="barra-nav">
+        <a href="index.html" id="contenedor-logo">
+            <img src="Recursos/Logo-blanco-transparente.png" alt="Inicio" id="logo">
+        </a>
+        <button class="contenedor-icono">
+            <img src="Recursos/lupa.png" alt="Buscar"
+            class="icono-barra-nav">
+        </button>
+        <button class="contenedor-icono">
+            <img src="Recursos/chat.png" alt="Chat"
+            class="icono-barra-nav">
+        </button>
+        <a href="carrito.html" class="contenedor-icono">
+            <img src="Recursos/carrito.png" alt="Carrito"
+            class="icono-barra-nav">
+        </a>
+    </nav>
+    <main>
+        <h1 class="tamaño bold margen">PAGO</h1>
+        <hr>
+            <section class="informacion-pago">
+                <div class="contenedor-yate-carrito m48">
+                    <h2 class="tamaño">M48</h2>
+                </div>
+                <div class="informacion-pago-valores">
+                    <p class="bold">PRIMER PAGO</p>
+                    <P>$800 Millones COP</P>
+                    <p class="bold">32 CUOTAS MENSUALES</p>
+                    <P>$100 Millones COP</P>
+                </div>
+            </section>
+            <section class="proceder-pago">
+                <div class="horizontal">
+                    <h2 class="tamaño2">PRECIO A PAGAR</h2>
+                    <P>$400 Millones COP</P>
+                </div>
+                <hr class="linea-completa blanco">
+                <p class="bold margen">MÉTODO DE PAGO</p>
+                <div>
+                    <input type="radio" name="metodo-pago" value="transferencia">
+                    <label for="transferencia">Transferencia Bancaria</label>
+                </div>
+                <div>
+                    <input type="radio" name="metodo-pago" value="bitcoin">
+                    <label for="bitcoin">(BTC) Bitcoin</label>
+                </div>
+                <div class="centrar">
+                    <button class="boton-realizar-pago">REALIZAR PAGO</button>
+                </div>
+            </section>
+    </main>
+    <div id="mensaje-ordenador">
+        <h1 class="bold">Acceso restringido</h1>
+        <p class="tamaño2">Esta página solo está disponible para dispositivos móviles.</p>
+    </div>
+</body>

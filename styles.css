@@ -1,0 +1,454 @@
+@font-face {
+    font-family: SansationLight;
+    src: url(Fuentes/sansation/Sansation_Light.ttf);
+}
+@font-face {
+    font-family: SansationBold;
+    src: url(Fuentes/sansation/Sansation_Bold.ttf);
+}
+
+#mensaje-ordenador{
+    display: none;
+}
+
+
+/* Contenido movil */
+@media (min-width: 320px) and (max-width: 768px) {
+    #mensaje-ordenador {
+        display: none;
+    }
+}
+
+/* Contenido dispositivos grandes */
+@media (min-width: 769px) {
+    body > *:not(#mensaje-ordenador) {
+        display: none;
+    }
+    
+    #mensaje-ordenador {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('Recursos/Inicio.jpg'); 
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+}
+/* Contenido dispositivos muy pequeños */
+@media (max-width: 319px) {
+    body > *:not(#mensaje-ordenador) {
+        display: none;
+    }
+    
+    #mensaje-ordenador {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('Recursos/Inicio.jpg'); 
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #172c54;
+    font-size: 20px;
+    font-family: SansationLight;
+    background-color: white;
+}
+
+header.inicio{
+    background-image: url(Recursos/Inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 94vh;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+h1{
+    font-family: SansationLight;
+    font-size: 50px;
+    margin: 0 10% 10% 10%;
+    text-align: center;
+}
+
+h2{
+    font-family: SansationBold;
+    font-size: 50px;
+    margin: 0;
+    z-index: 2;
+}
+
+main{
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+hr{
+    border: 0;
+    border-top: 4px solid #172c54;
+    width: 50%;
+    margin: 5% 25%;
+}
+
+hr.linea-completa{
+    width: 100%;
+    margin: 0;
+}
+
+hr.blanco{
+    border-color: white;
+}
+
+strong{
+    font-family: SansationBold;
+}
+
+p{
+    margin: 2% 5%;
+    font-size: 15px;
+}
+
+/* Fondo de pantalla inicial*/
+#yate-inicio{
+    height: 93vh;
+    overflow: hidden;
+}
+
+/*Barra de navegación*/
+.barra-nav{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #07151d;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0%;
+    align-items: center;
+    margin: 0;
+    z-index: 10;
+}
+
+#contenedor-logo{
+    margin: 5%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    justify-self: left;
+    align-self: center;
+    height: 50px;
+    width: 30wd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 30vw;
+}
+
+#logo-inicio{
+    width: 200px;
+}
+
+.contenedor-icono{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    justify-self: center;
+    align-self: center;
+    width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-barra-nav{
+    width: 6vw;
+}
+
+.tamaño{
+    font-size: 32px;
+    margin: 0 10%;
+}
+
+.contenedor-yate{
+    height: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 2%;
+}
+
+.descripcion-yate{
+    font-family: SansationLight;
+    margin: 0;
+    z-index: 2;
+}
+
+.descubre-mas{
+    font-family: SansationBold;
+    margin: 0;
+    color: white;
+    z-index: 2;
+}
+
+.contenedor-yate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.m48{
+    position: relative;
+    background-image: url(Recursos/M48.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.x60{
+    position: relative;
+    background-image: url(Recursos/X60.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.f4{
+    position: relative;
+    background-image: url(Recursos/F4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.y690{
+    position: relative;
+    background-image: url(Recursos/690.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.botones-redes{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    justify-self: center;
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-boton{
+    height: 100%;
+}
+
+.tamaño-copy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+.video-encabezado{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.video-yate{
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+
+.bold{
+    font-family: SansationBold;
+    margin-bottom: 0;
+}
+
+.contenedor-especificaciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80%;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 10%;
+}
+
+.especificacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.imagen-especificaciones{
+    height: 8vh;
+}
+
+.boton-reservar{
+    background-color: #172c54;
+    color: white;
+    font-family: SansationBold;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.margen{
+    margin: 10px;
+}
+
+.contenedor-yate-carrito{
+    height: 20vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.informacion-pago{
+    background-color:#07151d;
+    height: 30vh;
+    padding: 5%;
+    margin: 0 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.informacion-pago-valores{
+    display: grid;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.proceder-pago{
+    background-color: #07151d;
+    color: white;
+    margin: 10vh 0 0 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+}
+.tamaño2{
+    font-size: 25px;
+}
+
+.boton-realizar-pago{
+    background-color: #ffffffa5;
+    color:#07151d;
+    font-family: SansationBold;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5%;
+    cursor: pointer;
+    align-self: center;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
