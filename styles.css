@@ -165,61 +165,90 @@ p{
 }
 
 /*Barra de navegación*/
-.barra-nav{
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+/* Estilos generales y móviles */
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #07151d;
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 0%;
-    align-items: center;
+    padding: 0 3vw; /* Añade un padding para asegurar que los contenidos no toquen los bordes */
     margin: 0;
     z-index: 10;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
 }
 
-#contenedor-logo{
+#contenedor-logo {
     margin: 0;
     display: flex;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 50px;
-    transition: transform 0.3s;
+    max-width: 30vw; /* Limita el tamaño máximo del contenedor al ancho del logo */
+    box-sizing: border-box;
 }
 
-#logo{
-    width: 30vw;
-    max-width: 120px;
+#logo {
+    width: 100%;
+    height: auto;
 }
 
-#logo-inicio{
-    width: 200px;
+.contenedor-iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px; /* Espaciado entre los íconos */
+    flex-shrink: 0; /* Evita que se reduzca de tamaño en pantallas pequeñas */
+    box-sizing: border-box;
+    padding-left: 2vw; /* Añade espacio a la izquierda de los iconos para evitar que se acerquen demasiado al borde */
 }
 
-.contenedor-icono{
+.contenedor-icono {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    outline: none;
-    justify-self: center;
-    align-self: center;
-    width: 6vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s;
+    height: 50px;
+    width: auto;
 }
 
-.icono-barra-nav{
-    width: 6vw;
+.icono-barra-nav {
+    max-width: 24px; /* Tamaño máximo para los íconos */
+    height: auto;
+}
+
+/* Estilos para escritorio */
+@media (min-width: 768px) {
+    .barra-nav {
+        padding: 5px 20px;
+    }
+
+    #contenedor-logo {
+        padding: 0;
+        justify-self: flex-start;
+        max-width: 150px;
+    }
+
+    .contenedor-iconos {
+        gap: 50px; /* Espaciado adicional en escritorio */
+    }
+
+    .contenedor-icono {
+        margin-left: 10px; /* Añade un pequeño margen entre los íconos */
+    }
+
+    .icono-barra-nav {
+        max-width: 28px; /* Tamaño ajustado para escritorio */
+    }
 }
 
 .tamaño{
