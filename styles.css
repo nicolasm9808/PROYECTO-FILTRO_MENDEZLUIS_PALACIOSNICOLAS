@@ -18,40 +18,6 @@
         display: none;
     }
 }
-/*
-Contenido dispositivos grandes
-@media (min-width: 769px) {
-    body > *:not(#mensaje-ordenador) {
-        display: none;
-    }
-    
-    #mensaje-ordenador {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        color: white;
-        transition: transform 0.3s, background 0.3s;
-    }
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('Recursos/Inicio.jpg'); 
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-    }
-}
-*/
 
 /* Contenido dispositivos muy pequeños */
 @media (max-width: 319px) {
@@ -109,7 +75,10 @@ header.inicio{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-bottom: 10%;
+}
+
+#lista-yates{
+    margin-top: 5vh;
 }
 
 h1{
@@ -136,7 +105,7 @@ hr{
     border: 0;
     border-top: 4px solid #172c54;
     width: 50%;
-    margin: 5% 25%;
+    margin: 5vh 25%;
     transition: width 0.3s;
 }
 
@@ -249,6 +218,40 @@ p{
     .icono-barra-nav {
         max-width: 28px; /* Tamaño ajustado para escritorio */
     }
+
+    section > .contenedor-yate {
+        width: calc(33.333% - 20px); /* Ajuste para que quepan 3 por fila */
+        margin: 10px; /* Espacio entre yates */
+        box-sizing: border-box;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    header.video-encabezado {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        margin-bottom: 5vh;
+        padding: 0;
+    }
+
+    .video-yate {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+    }
+
 }
 
 .tamaño{
@@ -347,7 +350,7 @@ p{
     padding: 0%;
     align-items: center;
     justify-content: center;
-    margin: 5% 0;
+    margin: 3vh 0;
 }
 
 .botones-redes{
@@ -374,7 +377,7 @@ p{
     flex-direction: column;
     text-align: center;
     font-size: 15px;
-    margin-bottom: 5%;
+    margin-bottom: 3vh;
 }
 
 .video-encabezado{
