@@ -123,8 +123,13 @@ strong{
 }
 
 p{
-    margin: 2% 5%;
+    margin: 1vh;
     font-size: 15px;
+}
+
+div p{
+    margin: 0;
+    text-align: center;
 }
 
 /* Fondo de pantalla inicial*/
@@ -159,7 +164,7 @@ p{
     justify-content: flex-start;
     align-items: center;
     height: 50px;
-    max-width: 30vw; /* Limita el tamaño máximo del contenedor al ancho del logo */
+    max-width: 150PX;
     box-sizing: border-box;
 }
 
@@ -208,15 +213,15 @@ p{
     }
 
     .contenedor-iconos {
-        gap: 50px; /* Espaciado adicional en escritorio */
+        gap: 50px;
     }
 
     .contenedor-icono {
-        margin-left: 10px; /* Añade un pequeño margen entre los íconos */
+        margin-left: 10px;
     }
 
     .icono-barra-nav {
-        max-width: 28px; /* Tamaño ajustado para escritorio */
+        max-width: 28px;
     }
 
     section > .contenedor-yate {
@@ -230,6 +235,16 @@ p{
         flex-wrap: wrap;
         justify-content: center;
         padding: 0 20px;
+    }
+
+    section.seccion-precio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        margin: 3vh 0;
+        grid-template-columns: 1fr;
     }
 
     header.video-encabezado {
@@ -250,6 +265,26 @@ p{
         width: auto;
         height: auto;
         transform: translate(-50%, -50%);
+    }
+
+    div.contenedor-especificaciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    div.contenedor-precio {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    div.precio-info {
+        text-align: left;
     }
 
 }
@@ -377,7 +412,7 @@ p{
     flex-direction: column;
     text-align: center;
     font-size: 15px;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
 .video-encabezado{
@@ -432,6 +467,29 @@ p{
     padding: 5px;
     margin: 5%;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seccion-precio {
+    margin: 3vh 0;
+    text-align: center;
+}
+
+.contenedor-precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.precio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-reservar:hover {
+    background-color: #0056b3;
 }
 
 .margen{
