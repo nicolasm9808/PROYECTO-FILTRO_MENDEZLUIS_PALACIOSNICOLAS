@@ -79,6 +79,7 @@ header.inicio{
 
 #lista-yates{
     margin-top: 5vh;
+    
 }
 
 h1{
@@ -92,7 +93,7 @@ h2{
     font-family: SansationBold;
     font-size: 50px;
     margin: 0;
-    z-index: 2;
+
 }
 
 main{
@@ -105,7 +106,7 @@ hr{
     border: 0;
     border-top: 4px solid #172c54;
     width: 50%;
-    margin: 5vh 25%;
+    margin: 5% 25%;
     transition: width 0.3s;
 }
 
@@ -249,7 +250,8 @@ div p{
 
     section.informacion-pago{
         padding: 1% 3%;
-        margin: 0 20%;
+        margin: 0 10%;
+        margin-bottom: 20%;
         border-radius:40px;
     }
 
@@ -291,6 +293,10 @@ div p{
 
     div.precio-info {
         text-align: left;
+    }
+
+    hr{
+        margin: 2% 25%;
     }
 
     
@@ -500,29 +506,38 @@ div p{
 }
 
 .margen{
-    margin: 30px;
+    margin: 20px;
 }
 
-.contenedor-yate-carrito{
-    height: 20vh;
-    color: white;
+.contenedor-yate-carrito {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
-    padding: 2%;
-    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff; /* Ajusta el borde según tus necesidades */
+    border-radius: 8px;
+    overflow: hidden; /* Asegúrate de que el contenido que se desborda se oculte */
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
 }
-
+/* Ajusta las imágenes para que no se salgan del contenedor */
+.imagen-yate-carrito {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+    max-width: 100%;
+    height: auto; /* Mantén la proporción de la imagen */
+    object-fit: cover; /* Asegúrate de que la imagen cubra el contenedor sin distorsionarse */
+    border-bottom: 1px solid #ccc; /* Opcional: Añadir una línea debajo de la imagen */
+}
 .informacion-pago{
-    background-color:#07151d;
-    height: 30vh;
+    background-color:#022b44;
+    height: 100%;
     padding: 5%;
     margin: 0 10%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     color: white;
+    margin-bottom: 75%; /* Añadir margen en la parte inferior para separación */
 }
 
 .informacion-pago-valores{
@@ -534,16 +549,16 @@ div p{
     grid-template-rows: 1fr 1fr;
     padding: 0 2%;
     column-gap: 2%;
+    row-gap: 5%;
 }
 
 .proceder-pago{
     background-color: #07151d;
     color: white;
-    margin: 10vh 0 0 0;
     padding: 0;
     position:fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     text-align: left;
     align-items: center;
     column-gap: 2%;
@@ -583,4 +598,25 @@ div p{
     display: flex;
     justify-content: center;
     height: 100%;
+}
+
+#vaciar-carrito {
+    background-color: #f44336; /* Color rojo para el botón de vaciar carrito */
+}
+
+#vaciar-carrito:hover {
+    background-color: #c62828; /* Color rojo más oscuro al pasar el ratón */
+}
+
+#yates-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    overflow-x: hidden;
 }
