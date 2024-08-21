@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury_Yatch</title>
+    <title>Luxury_Yacht</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <nav class="barra-nav">
@@ -13,16 +14,14 @@
         </a>
         <div class="contenedor-iconos">
             <button class="contenedor-icono">
-                <img src="Recursos/lupa.png" alt="Buscar"
-                class="icono-barra-nav">
+                <img src="Recursos/lupa.png" alt="Buscar" class="icono-barra-nav">
             </button>
+            <input type="text" id="buscador" oninput="filtrarYates()" placeholder="Buscar yate...">
             <button class="contenedor-icono">
-                <img src="Recursos/chat.png" alt="Chat"
-                class="icono-barra-nav">
+                <img src="Recursos/chat.png" alt="Chat" class="icono-barra-nav">
             </button>
             <a href="carrito.html" class="contenedor-icono">
-                <img src="Recursos/carrito.png" alt="Carrito"
-                class="icono-barra-nav">
+                <img src="Recursos/carrito.png" alt="Carrito" class="icono-barra-nav">
             </a>
         </div>
     </nav>
@@ -36,41 +35,6 @@
         <section id="lista-yates"> <!-- Lista de yates -->
             <h1 class="tamaño">DESCUBRE NUESTROS YATES</h1>
             <hr>
-            <div class="contenedor-yate m48">
-                <h2>M48</h2>
-                <p class="descripcion-yate">
-                    Momentos preciosos en el agua
-                </p>
-                <a href="M48.html" class="descubre-mas">Descubre más ></a>
-            </div>
-            <div class="contenedor-yate x60">
-                <h2>X60</h2>
-                <p class="descripcion-yate">
-                    Arte de crear bienestar a bordo
-                </p>
-                <a href="X60.html" class="descubre-mas">Descubre más ></a>
-            </div>
-            <div class="contenedor-yate f4">
-                <h2>F4</h2>
-                <p class="descripcion-yate">
-                    El reflejo de movimiento del mar
-                </p>
-                <a href="F4.html" class="descubre-mas">Descubre más ></a>
-            </div>
-            <div class="contenedor-yate y690">
-                <h2>690</h2>
-                <p class="descripcion-yate">
-                    Refinamiento y elegancia
-                </p>
-                <a href="690.html" class="descubre-mas">Descubre más ></a>
-            </div>
-            <div class="contenedor-yate y420s">
-                <h2>420S</h2>
-                <p class="descripcion-yate">
-                    Mezclando elegancia y deporte
-                </p>
-                <a href="420S.html" class="descubre-mas">Descubre más ></a>
-            </div>
         </section>
         <section><!-- Redes Sociales -->
             <hr>

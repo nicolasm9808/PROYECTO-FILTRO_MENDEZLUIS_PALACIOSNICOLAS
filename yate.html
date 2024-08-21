@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Yate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="yate.js" defer></script>
+</head>
+<body>
+    <nav class="barra-nav">
+        <a href="index.html" id="contenedor-logo">
+            <img src="Recursos/Logo-blanco-transparente.png" alt="Inicio" id="logo">
+        </a>
+        <div class="contenedor-iconos">
+            <button class="contenedor-icono">
+                <img src="Recursos/lupa.png" alt="Buscar" class="icono-barra-nav">
+            </button>
+            <button class="contenedor-icono">
+                <img src="Recursos/chat.png" alt="Chat" class="icono-barra-nav">
+            </button>
+            <a href="carrito.html" class="contenedor-icono">
+                <img src="Recursos/carrito.png" alt="Carrito" class="icono-barra-nav">
+            </a>
+        </div>
+    </nav>
+    <header class="video-encabezado">
+        <video autoplay muted loop id="video-yate" class="video-yate"></video>
+    </header>
+    <main>
+        <h1 id="nombre-yate" class="bold"></h1>
+        <p id="descripcion-yate"></p>
+        <section><!-- Especificaciones -->
+            <hr>
+            <h1 class="tamaño bold">ESPECIFICACIONES</h1>
+            <div class="contenedor-especificaciones" id="contenedor-especificaciones"></div>
+        </section>
+        <section class="seccion-precio"><!-- Precio -->
+            <hr>
+            <div>
+                <h1 class="tamaño bold">PRECIO</h1>
+                <b id="precio-yate"></b>
+            </div>
+            <div class="contenedor-precio">
+                <div class="precio-info">
+                    <p id="reserva-info"></p>
+                    <p id="pago-info"></p>
+                </div>
+                <button class="boton-reservar" id="reservar-btn">RESERVAR</button>
+            </div>
+        </section>      
+    </main>
+    <footer class="tamaño-copy">
+        <hr class="linea-completa">
+        <p>© LUXURY YACHT S.A.S. 2024</p>
+        <strong>EMPRESA</strong>
+        <strong>POLÍTICA DE COOKIES</strong>
+        <strong>AVISO LEGAL Y PRIVADO</strong>
+    </footer>
+    <div id="mensaje-ordenador">
+        <h1 class="bold">Acceso restringido</h1>
+        <p class="tamaño2">Esta página solo está disponible para dispositivos móviles.</p>
+    </div>
+</body>
+</html>

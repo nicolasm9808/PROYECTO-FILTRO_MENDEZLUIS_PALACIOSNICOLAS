@@ -1,0 +1,31 @@
+[
+    {
+        "nombre": "M48",
+        "descripcionCorta": "Momentos preciosos en el agua",
+        "descripcionCompleta": "Este yate a motor multicasco está diseñado para descubrir paisajes excepcionales...",
+        "videoSrc": "Recursos/video-M48.mp4",
+        "precio": 4000,
+        "reserva": 800,
+        "mesesPago": 32,
+        "especificaciones": [
+            { "titulo": "MOTOR", "valor": "VOLVO 2 x D4-320 CV - V-Drive", "icono": "Recursos/icono-motor.JPG" },
+            { "titulo": "CAPACIDAD COMBUSTIBLE", "valor": "1200 l / 317 US gal", "icono": "Recursos/icono-gasolina.JPG" },
+            { "titulo": "TAMAÑO", "valor": "14.79 m / 48'6\"", "icono": "Recursos/icono-tamaño.JPG" },
+            { "titulo": "CAPACIDAD MAX. PERSONAS", "valor": "8-9", "icono": "Recursos/icono-cama.JPG" },
+            { "titulo": "CERTIFICADO", "valor": "B-12/C-14/D-16", "icono": "Recursos/icono-certificado.JPG" },
+            { "titulo": "VELOCIDAD CRUCERO", "valor": "15.8 nd", "icono": "Recursos/icono-velocidad.JPG" }
+        ],
+        "imagen": "Recursos/M48.jpg"
+    },
+    {
+        "nombre": "X60",
+        "descripcionCorta": "Lujo y rendimiento en el agua",
+        "descripcionCompleta": "Este yate de lujo combina un diseño moderno con un rendimiento excepcional...",
+        "videoSrc": "Recursos/video-X60.mp4",
+        "precio": 6000,
+        "reserva": 1200,
+        "mesesPago": 36,
+        "especificaciones": [],
+        "imagen": "Recursos/X60.jpeg"
+    }
+]
