@@ -2,7 +2,7 @@
     {
         "nombre": "M48",
         "descripcionCorta": "Momentos preciosos en el agua",
-        "descripcionCompleta": "Este yate a motor multicasco está diseñado para descubrir paisajes excepcionales...",
+        "descripcionCompleta": "Este yate a motor multicasco está diseñado para descubrir paisajes excepcionales y vivir experiencias de plenitud y bienestar. La apertura al mar por dentro y por fuera, la sensación de espacio, la fluidez de cada momento vivido a bordo, la delicadeza de los equipamientos y los materiales... Cada detalle contribuye a configurar momentos de intensa serenidad.",
         "videoSrc": "Recursos/video-M48.mp4",
         "precio": 4000,
         "reserva": 800,
@@ -19,13 +19,91 @@
     },
     {
         "nombre": "X60",
-        "descripcionCorta": "Lujo y rendimiento en el agua",
-        "descripcionCompleta": "Este yate de lujo combina un diseño moderno con un rendimiento excepcional...",
-        "videoSrc": "Recursos/video-X60.mp4",
-        "precio": 6000,
-        "reserva": 1200,
+        "descripcionCorta": "Creando bienestar a bordo",
+        "descripcionCompleta": "Grandes volúmenes, luminosidad y fácil circulación a bordo: estas palabras clave guiaron el diseño de la nueva X60. Diseñada para cruceros suaves y armoniosos, su diseño crea una conexión ilimitada con el mar. Completamente abierta, la cabina infinity ofrece unas vistas impresionantes del océano y se comunica fácilmente con la sala de estar a través de un gran ventanal eléctrico.",
+        "videoSrc": "Recursos/X60.jpeg",
+        "precio": 4000,
+        "reserva": 800,
         "mesesPago": 32,
-        "especificaciones": [],
+        "especificaciones": [
+            { "titulo": "MOTOR", "valor": "CUMMINS 2 x QSC 8.3 - 600 CV - ZEUS", "icono": "Recursos/icono-motor.JPG" },
+            { "titulo": "CAPACIDAD COMBUSTIBLE", "valor": "2200 l / 581 US gal", "icono": "Recursos/icono-gasolina.JPG" },
+            { "titulo": "TAMAÑO", "valor": "18.91 m / 62'", "icono": "Recursos/icono-tamaño.JPG" },
+            { "titulo": "CAPACIDAD MAX. PERSONAS", "valor": "6-7", "icono": "Recursos/icono-cama.JPG" },
+            { "titulo": "CERTIFICADO", "valor": "B-12 / C-14 / D-14", "icono": "Recursos/icono-certificado.JPG" },
+            { "titulo": "VELOCIDAD CRUCERO", "valor": "18 nd", "icono": "Recursos/icono-velocidad.JPG" }],
         "imagen": "Recursos/X60.jpeg"
+    },
+    {
+        "nombre": "F4",
+        "descripcionCorta": "Inspirado en el movimiento del mar",
+        "descripcionCompleta": "Inspirándose en el movimiento del mar, las líneas exteriores fluidas y elegantes del nuevo casco F4 se mezclan con las superficies pulidas de las zonas de estar, que reflejan abundantemente la luz natural. La curvatura de las líneas ha sido cuidadosamente estudiada para conferir suavidad, finura y potencia al conjunto. El equipamiento exterior e interior se ha reinventado y ofrece a los pasajeros un gran confort.",
+        "videoSrc": "Recursos/video-F4.mp4",
+        "precio": 2000,
+        "reserva": 400,
+        "mesesPago": 32,
+        "especificaciones": [
+            { "titulo": "MOTOR", "valor": "VOLVO 2 x IPS 650 (D6 - 480 HP)", "icono": "Recursos/icono-motor.JPG" },
+            { "titulo": "CAPACIDAD COMBUSTIBLE", "valor": "1300 l / 343 US gal", "icono": "Recursos/icono-gasolina.JPG" },
+            { "titulo": "TAMAÑO", "valor": "15.18 m / 49'10''", "icono": "Recursos/icono-tamaño.JPG" },
+            { "titulo": "CAPACIDAD MAX. PERSONAS", "valor": "6-7", "icono": "Recursos/icono-cama.JPG" },
+            { "titulo": "CERTIFICADO", "valor": "CE.B", "icono": "Recursos/icono-certificado.JPG" },
+            { "titulo": "VELOCIDAD CRUCERO", "valor": "21 nd", "icono": "Recursos/icono-velocidad.JPG" }
+        ],
+        "imagen": "Recursos/F4.jpeg"
+    },
+    {
+        "nombre": "420",
+        "descripcionCorta": "El lujo desde 42 pies",
+        "descripcionCompleta": "Espaciosa, luminosa, agradable pero también potente, el 420 refleja el ADN de la marca y promete ofrecer una increíble vida a bordo en un yate de este tamaño. Sus líneas audaces y elegantes están firmadas por GARRONI Design. El modelo está dotado con un sistema de propulsión V-Driv, lo que garantiza un equilibrio perfecto gracias a la centralización de los pesos. ¡Esta eficiente y potente solución permite una navegación incomparable. Tiene una distribución increíble para un yate de este tamaño. El gran FLY ofrece una incomparable vida en el exterior: cada uso tiene su área específica. Hay una cabina completa, una cocina, una gran zona para tomar el sol y una zona para comer con mesa y sofá en forma de U. En el interior, el 420 revela todo su ingenio al servicio del refinamiento. Acabados y materiales de alta gama crean un universo armonioso y agradable. Todo está pensado para disfrutar de un ambiente amable, cálido, luminoso y armonioso.",
+        "videoSrc": "Recursos/420.jpeg",
+        "precio": 1000,
+        "reserva": 200,
+        "mesesPago": 32,
+        "especificaciones": [
+            { "titulo": "MOTOR", "valor": "2 x Cummins 6.7 - 380 CV/HP - V-drive/ 2 x Cummins 6.7 - 425 CV/HP - V-drive", "icono": "Recursos/icono-motor.JPG" },
+            { "titulo": "CAPACIDAD COMBUSTIBLE", "valor": "1170 l / 309 US gal", "icono": "Recursos/icono-gasolina.JPG" },
+            { "titulo": "TAMAÑO", "valor": "13.06 m / 42'10''", "icono": "Recursos/icono-tamaño.JPG" },
+            { "titulo": "CAPACIDAD MAX. PERSONAS", "valor": "4", "icono": "Recursos/icono-cama.JPG" },
+            { "titulo": "CERTIFICADO", "valor": "B-10 / C-12", "icono": "Recursos/icono-certificado.JPG" },
+            { "titulo": "VELOCIDAD CRUCERO", "valor": "25 nd", "icono": "Recursos/icono-velocidad.JPG" }
+        ],
+        "imagen": "Recursos/Y420.jpg"
+    },
+    {
+        "nombre": "420S",
+        "descripcionCorta": "El yate chic y deportivo en versión coupé",
+        "descripcionCompleta": "Este yate ofrece la oportunidad de vivir momentos de bienestar y convivencia a bordo. En el interior, su distribución optimizada y su depurado diseño disfrutan de una luminosidad excepcional gracias al techo solar eléctrico. Los amplios volúmenes y los espacios al mismo nivel hacen del 420S modelo ingenioso y agradable. La gran cabina propietario, situada en la popa del yate, propone servicios de calidad: una gran cama doble central y un baño privado. En el exterior, su corte deportivo se mezcla perfectamente con una atmósfera refinada y relajada.",
+        "videoSrc": "Recursos/video-F4.mp4",
+        "precio": 1000,
+        "reserva": 200,
+        "mesesPago": 32,
+        "especificaciones": [
+            { "titulo": "MOTOR", "valor": "CUMMINS 2 x QSB 6.7 - 380 CV/HP - V-Drive / CUMMINS 2 x QSB 6.7 - 425 CV/HP - V-Drive", "icono": "Recursos/icono-motor.JPG" },
+            { "titulo": "CAPACIDAD COMBUSTIBLE", "valor": "1170 l / 309 US gal", "icono": "Recursos/icono-gasolina.JPG" },
+            { "titulo": "TAMAÑO", "valor": "13.06 m / 42'10''", "icono": "Recursos/icono-tamaño.JPG" },
+            { "titulo": "CAPACIDAD MAX. PERSONAS", "valor": "4", "icono": "Recursos/icono-cama.JPG" },
+            { "titulo": "CERTIFICADO", "valor": "B-10 / C-12", "icono": "Recursos/icono-certificado.JPG" },
+            { "titulo": "VELOCIDAD CRUCERO", "valor": "24 nd", "icono": "Recursos/icono-velocidad.JPG" }
+        ],
+        "imagen": "Recursos/420S.jpeg"
+    },
+    {
+        "nombre": "690",
+        "descripcionCorta": "Un yate refinado, en sinergia con el mar",
+        "descripcionCompleta": "Este nuevo yate refleja el ADN de la marca e incorpora todas las últimas innovaciones. Amplio, luminoso, todo está pensado para vivir lo más cerca posible del mar. Beneficiándose de la reconocida experiencia de Garroni Design, ofrece un enorme flybridge y, de acabados incomparables.",
+        "videoSrc": "Recursos/video-F4.mp4",
+        "precio": 4000,
+        "reserva": 800,
+        "mesesPago": 32,
+        "especificaciones": [
+            { "titulo": "MOTOR", "valor": "Volvo 2 x IPS 1200 (D13 - 900 CV/HP) / Volvo 2 x IPS 1350 (D13 - 1000 CV/HP)", "icono": "Recursos/icono-motor.JPG" },
+            { "titulo": "CAPACIDAD COMBUSTIBLE", "valor": "3450 l / 911 US gal", "icono": "Recursos/icono-gasolina.JPG" },
+            { "titulo": "TAMAÑO", "valor": "21.45 m / 70'4''", "icono": "Recursos/icono-tamaño.JPG" },
+            { "titulo": "CAPACIDAD MAX. PERSONAS", "valor": "8-2", "icono": "Recursos/icono-cama.JPG" },
+            { "titulo": "CERTIFICADO", "valor": "B - 14 / C - 18", "icono": "Recursos/icono-certificado.JPG" },
+            { "titulo": "VELOCIDAD CRUCERO", "valor": "23 nd", "icono": "Recursos/icono-velocidad.JPG" }
+        ],
+        "imagen": "Recursos/F4.jpeg"
     }
 ]
