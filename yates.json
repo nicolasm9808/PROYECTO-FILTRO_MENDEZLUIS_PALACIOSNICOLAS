@@ -21,7 +21,7 @@
         "nombre": "X60",
         "descripcionCorta": "Creando bienestar a bordo",
         "descripcionCompleta": "Grandes volúmenes, luminosidad y fácil circulación a bordo: estas palabras clave guiaron el diseño de la nueva X60. Diseñada para cruceros suaves y armoniosos, su diseño crea una conexión ilimitada con el mar. Completamente abierta, la cabina infinity ofrece unas vistas impresionantes del océano y se comunica fácilmente con la sala de estar a través de un gran ventanal eléctrico.",
-        "videoSrc": "Recursos/X60.jpeg",
+        "videoSrc": "Recursos/video-M48.mp4",
         "precio": 4000,
         "reserva": 800,
         "mesesPago": 32,
@@ -56,7 +56,7 @@
         "nombre": "420",
         "descripcionCorta": "El lujo desde 42 pies",
         "descripcionCompleta": "Espaciosa, luminosa, agradable pero también potente, el 420 refleja el ADN de la marca y promete ofrecer una increíble vida a bordo en un yate de este tamaño. Sus líneas audaces y elegantes están firmadas por GARRONI Design. El modelo está dotado con un sistema de propulsión V-Driv, lo que garantiza un equilibrio perfecto gracias a la centralización de los pesos. ¡Esta eficiente y potente solución permite una navegación incomparable. Tiene una distribución increíble para un yate de este tamaño. El gran FLY ofrece una incomparable vida en el exterior: cada uso tiene su área específica. Hay una cabina completa, una cocina, una gran zona para tomar el sol y una zona para comer con mesa y sofá en forma de U. En el interior, el 420 revela todo su ingenio al servicio del refinamiento. Acabados y materiales de alta gama crean un universo armonioso y agradable. Todo está pensado para disfrutar de un ambiente amable, cálido, luminoso y armonioso.",
-        "videoSrc": "Recursos/420.jpeg",
+        "videoSrc": "Recursos/video-M48.mp4",
         "precio": 1000,
         "reserva": 200,
         "mesesPago": 32,
@@ -68,7 +68,7 @@
             { "titulo": "CERTIFICADO", "valor": "B-10 / C-12", "icono": "Recursos/icono-certificado.JPG" },
             { "titulo": "VELOCIDAD CRUCERO", "valor": "25 nd", "icono": "Recursos/icono-velocidad.JPG" }
         ],
-        "imagen": "Recursos/Y420.jpg"
+        "imagen": "Recursos/Y420.jpeg"
     },
     {
         "nombre": "420S",
@@ -92,7 +92,7 @@
         "nombre": "690",
         "descripcionCorta": "Un yate refinado, en sinergia con el mar",
         "descripcionCompleta": "Este nuevo yate refleja el ADN de la marca e incorpora todas las últimas innovaciones. Amplio, luminoso, todo está pensado para vivir lo más cerca posible del mar. Beneficiándose de la reconocida experiencia de Garroni Design, ofrece un enorme flybridge y, de acabados incomparables.",
-        "videoSrc": "Recursos/video-F4.mp4",
+        "videoSrc": "Recursos/video-M48.mp4",
         "precio": 4000,
         "reserva": 800,
         "mesesPago": 32,
@@ -104,6 +104,6 @@
             { "titulo": "CERTIFICADO", "valor": "B - 14 / C - 18", "icono": "Recursos/icono-certificado.JPG" },
             { "titulo": "VELOCIDAD CRUCERO", "valor": "23 nd", "icono": "Recursos/icono-velocidad.JPG" }
         ],
-        "imagen": "Recursos/F4.jpeg"
+        "imagen": "Recursos/690.png"
     }
 ]

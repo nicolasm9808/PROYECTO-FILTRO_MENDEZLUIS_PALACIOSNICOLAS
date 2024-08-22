@@ -8,8 +8,10 @@ fetch('yates.json')
             // Crear el contenedor de cada yate
             const divYate = document.createElement('div');
             divYate.classList.add('contenedor-yate');
-            divYate.classList.add(yate.nombre.toLowerCase()); // Agregar clase para la imagen
             
+            // Establecer la imagen de fondo desde el archivo JSON
+            divYate.style.backgroundImage = `url(${yate.imagen})`;
+
             // Título del yate
             const h2Yate = document.createElement('h2');
             h2Yate.textContent = yate.nombre;

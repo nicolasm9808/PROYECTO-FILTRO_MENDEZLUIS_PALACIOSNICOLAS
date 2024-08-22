@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const primerPagoElem = document.getElementById('primer-pago');
     const cuotasMensualesElem = document.getElementById('cuotas-mensuales');
 
-    const primerPagoPorcentaje = 0.20; // 20% del total
-    const cuotasMensuales = 32; // Valor predeterminado, se puede ajustar si es necesario
+    const primerPagoPorcentaje = 0.20;
+    const cuotasMensualesFijas = 32;
 
-    function calcularPagos(total) {
+    function calcularPagos(total, meses) {
         const primerPago = total * primerPagoPorcentaje;
-        const montoCuota = (total - primerPago) / cuotasMensuales;
+        const montoCuota = (total - primerPago) / meses;
         return {
             primerPago: primerPago.toFixed(0),
             montoCuota: montoCuota.toFixed(0)
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             let total = 0;
             let primerPagoTotal = 0;
-            let mesesPago = 0;
+            let totalMeses = 0;
 
             Promise.all(carrito.map(yateNombre => {
                 return fetch('yates.json')
@@ -44,18 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p class="bold">$${yate.precio} Millones COP</p>
                             `;
                             yatesCarrito.appendChild(divYate);
-                            primerPagoTotal += yate.reserva; // Acumulamos el primer pago
-                            total += primerPagoTotal;
-                            mesesPago = yate.mesesPago; // Usar el número de meses del último yate, o ajustar si necesario
+
+                            total += yate.precio;
+                            primerPagoTotal += yate.reserva;
+                            totalMeses = Math.max(totalMeses, yate.mesesPago);
                         }
                     })
                     .catch(error => console.error('Error al cargar el yate:', error));
             })).then(() => {
-                // Actualizamos la UI después de que todas las promesas se hayan resuelto
-                const { primerPago, montoCuota } = calcularPagos(total);
+                const { primerPago, montoCuota } = calcularPagos(total, totalMeses || cuotasMensualesFijas);
+                
                 primerPagoElem.textContent = `$${primerPagoTotal.toFixed(0)} Millones COP`;
                 cuotasMensualesElem.textContent = `$${montoCuota} Millones COP`;
-                precioTotalElem.textContent = `$${total.toFixed(0)} Millones COP`;
+                precioTotalElem.textContent = `$${primerPagoTotal.toFixed(0)} Millones COP`;
 
                 informacionPago.style.display = 'flex'; // Mostrar sección de información de pago
             });

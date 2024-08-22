@@ -149,10 +149,10 @@ div p{
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 0 3vw; /* Añade un padding para asegurar que los contenidos no toquen los bordes */
+    padding: 0 3vw;
     margin: 0;
     z-index: 10;
-    box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+    box-sizing: border-box;
 }
 
 #contenedor-logo {
@@ -178,10 +178,10 @@ div p{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px; /* Espaciado entre los íconos */
-    flex-shrink: 0; /* Evita que se reduzca de tamaño en pantallas pequeñas */
+    gap: 10px;
+    flex-shrink: 0;
     box-sizing: border-box;
-    padding-left: 2vw; /* Añade espacio a la izquierda de los iconos para evitar que se acerquen demasiado al borde */
+    padding-left: 2vw;
 }
 
 .contenedor-icono {
@@ -197,14 +197,36 @@ div p{
 }
 
 .icono-barra-nav {
-    max-width: 24px; /* Tamaño máximo para los íconos */
+    max-width: 24px;
     height: auto;
+}
+
+/* Estilos para el input buscador */
+#buscador {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100px;
+    max-width: 100%;
+    background-color: #f9f9f9; 
+}
+
+#buscador:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* Estilos para escritorio */
 @media (min-width: 768px) {
     .barra-nav {
         padding: 5px 20px;
+    }
+
+    #buscador{
+        width: 200px;
     }
 
     #contenedor-logo {
@@ -227,7 +249,7 @@ div p{
 
     section > .contenedor-yate {
         width: calc(33.333% - 20px); /* Ajuste para que quepan 3 por fila */
-        margin: 10px; /* Espacio entre yates */
+        margin: 10px;
         box-sizing: border-box;
     }
 
@@ -302,8 +324,6 @@ div p{
     hr{
         margin: 2% 25%;
     }
-
-    
 }
 
 .tamaño{
@@ -322,6 +342,9 @@ div p{
     overflow: hidden;
     position: relative;
     transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -357,41 +380,6 @@ div p{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     z-index: -1;
     transition: background 0.3s;
-}
-
-.m48{
-    position: relative;
-    background-image: url(Recursos/M48.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.x60{
-    position: relative;
-    background-image: url(Recursos/X60.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-.f4{
-    position: relative;
-    background-image: url(Recursos/F4.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-.y690{
-    position: relative;
-    background-image: url(Recursos/690.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.y420s{
-    position: relative;
-    background-image: url(Recursos/420S.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .contenedor-redes{
@@ -519,18 +507,18 @@ div p{
     align-items: center;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ffffff; /* Ajusta el borde según tus necesidades */
+    border: 1px solid #ffffff;
     border-radius: 8px;
-    overflow: hidden; /* Asegúrate de que el contenido que se desborda se oculte */
-    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+    overflow: hidden;
+    max-width: 300px;
 }
-/* Ajusta las imágenes para que no se salgan del contenedor */
+
 .imagen-yate-carrito {
-    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+    width: 100%; 
     max-width: 100%;
-    height: auto; /* Mantén la proporción de la imagen */
+    height: auto; 
     object-fit: cover; /* Asegúrate de que la imagen cubra el contenedor sin distorsionarse */
-    border-bottom: 1px solid #ccc; /* Opcional: Añadir una línea debajo de la imagen */
+    border-bottom: 1px solid #ccc;
 }
 .informacion-pago{
     background-color:#022b44;
@@ -541,7 +529,7 @@ div p{
     display: flex;
     flex-direction: column;
     color: white;
-    margin-bottom: 75%; /* Añadir margen en la parte inferior para separación */
+    margin-bottom: 75%;
 }
 
 .informacion-pago-valores{
@@ -614,17 +602,17 @@ div p{
     cursor: pointer;
     align-self: center;
     transition: background-color 0.3s ease;
-    background-color: #ffffff; /* Color rojo para el botón de vaciar carrito */
+    background-color: #ffffff;
 }
 
 #vaciar-carrito:hover {
-    background-color: #f53f3f; /* Color rojo más oscuro al pasar el ratón */
+    background-color: #f53f3f;
 }
 
 #yates-carrito {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espaciado entre los elementos */
+    gap: 20px;
     padding: 0;
     justify-content: center;
     align-items: center;
