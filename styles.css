@@ -255,6 +255,10 @@ div p{
         border-radius:40px;
     }
 
+    div.informacion-pago-valores{
+        margin: 3% 20% 0;
+    }
+
     header.video-encabezado {
         position: relative;
         width: 100%;
@@ -550,6 +554,7 @@ div p{
     padding: 0 2%;
     column-gap: 2%;
     row-gap: 5%;
+    margin: 3% 0 0;
 }
 
 .proceder-pago{
@@ -601,11 +606,19 @@ div p{
 }
 
 #vaciar-carrito {
-    background-color: #f44336; /* Color rojo para el botón de vaciar carrito */
+    color:#07151d;
+    font-family: SansationBold;
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 2%;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff; /* Color rojo para el botón de vaciar carrito */
 }
 
 #vaciar-carrito:hover {
-    background-color: #c62828; /* Color rojo más oscuro al pasar el ratón */
+    background-color: #f53f3f; /* Color rojo más oscuro al pasar el ratón */
 }
 
 #yates-carrito {

@@ -24,7 +24,7 @@
         "videoSrc": "Recursos/video-X60.mp4",
         "precio": 6000,
         "reserva": 1200,
-        "mesesPago": 36,
+        "mesesPago": 32,
         "especificaciones": [],
         "imagen": "Recursos/X60.jpeg"
     }

@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const primerPago = total * primerPagoPorcentaje;
         const montoCuota = (total - primerPago) / cuotasMensuales;
         return {
-            primerPago: primerPago.toFixed(2),
-            montoCuota: montoCuota.toFixed(2)
+            primerPago: primerPago.toFixed(0),
+            montoCuota: montoCuota.toFixed(0)
         };
     }
 
@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p class="bold">$${yate.precio} Millones COP</p>
                             `;
                             yatesCarrito.appendChild(divYate);
-                            total += yate.precio;
                             primerPagoTotal += yate.reserva; // Acumulamos el primer pago
+                            total += primerPagoTotal;
                             mesesPago = yate.mesesPago; // Usar el número de meses del último yate, o ajustar si necesario
                         }
                     })
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             })).then(() => {
                 // Actualizamos la UI después de que todas las promesas se hayan resuelto
                 const { primerPago, montoCuota } = calcularPagos(total);
-                primerPagoElem.textContent = `$${primerPagoTotal.toFixed(2)} Millones COP`;
+                primerPagoElem.textContent = `$${primerPagoTotal.toFixed(0)} Millones COP`;
                 cuotasMensualesElem.textContent = `$${montoCuota} Millones COP`;
-                precioTotalElem.textContent = `$${total.toFixed(2)} Millones COP`;
+                precioTotalElem.textContent = `$${total.toFixed(0)} Millones COP`;
 
                 informacionPago.style.display = 'flex'; // Mostrar sección de información de pago
             });
